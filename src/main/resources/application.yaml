@@ -1,6 +1,7 @@
 spring:
   application:
     name: patient-service
+
   datasource:
     url: jdbc:postgresql://localhost:5432/patient_db
     username: postgres
@@ -30,3 +31,6 @@ logging:
     org.springframework.web: INFO
     org.hibernate.SQL: DEBUG
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    com.sheranga.patient: DEBUG
+    org.springdoc: DEBUG
+    org.springframework.web.servlet.DispatcherServlet: DEBUG
