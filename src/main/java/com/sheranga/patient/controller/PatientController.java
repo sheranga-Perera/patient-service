@@ -21,6 +21,10 @@ import java.util.UUID;
 /**
  * This controller will handle patient related operations
  */
+@CrossOrigin(
+        origins = "http://localhost:3000",
+        methods = { RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE }
+)
 @RestController
 @RequestMapping(value="/patient")
 @Tag(name = "Patient API", description = "CRUD operations for Patient")
